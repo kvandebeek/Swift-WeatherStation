@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="luh-B1-q9J">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--tempBuiten-->
+        <scene sceneID="Vev-it-B8a">
+            <objects>
+                <viewController storyboardIdentifier="tempBuiten" id="49d-kq-YjB" userLabel="tempBuiten" customClass="tempBuiten" customModule="Weerstation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VDM-hs-ILq" userLabel="mainView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kz7-Fn-kkm" userLabel="scrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Ips-wk-Z25" userLabel="stackView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="645"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="645" id="Akx-xN-r9D"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ips-wk-Z25" secondAttribute="bottom" id="TeX-hv-GEd"/>
+                                    <constraint firstItem="Ips-wk-Z25" firstAttribute="top" secondItem="kz7-Fn-kkm" secondAttribute="top" id="bat-1Q-mXs"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ips-wk-Z25" secondAttribute="trailing" id="cUK-tU-oTe"/>
+                                    <constraint firstItem="Ips-wk-Z25" firstAttribute="height" secondItem="kz7-Fn-kkm" secondAttribute="height" priority="250" id="nHh-YQ-OUH"/>
+                                    <constraint firstItem="Ips-wk-Z25" firstAttribute="leading" secondItem="kz7-Fn-kkm" secondAttribute="leading" id="otq-op-k5v"/>
+                                    <constraint firstItem="Ips-wk-Z25" firstAttribute="width" secondItem="kz7-Fn-kkm" secondAttribute="width" id="vWe-3h-bSK"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="opc-Dc-Boh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kz7-Fn-kkm" firstAttribute="top" secondItem="opc-Dc-Boh" secondAttribute="top" id="U7E-63-wUa"/>
+                            <constraint firstItem="kz7-Fn-kkm" firstAttribute="leading" secondItem="opc-Dc-Boh" secondAttribute="leading" id="bwH-fo-bwQ"/>
+                            <constraint firstItem="kz7-Fn-kkm" firstAttribute="trailing" secondItem="opc-Dc-Boh" secondAttribute="trailing" id="diu-kI-n5H"/>
+                            <constraint firstItem="kz7-Fn-kkm" firstAttribute="bottom" secondItem="opc-Dc-Boh" secondAttribute="bottom" id="tRS-Fj-PNi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="Ips-wk-Z25" id="tVf-r7-Xta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mKd-Wo-q3F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4454" y="1096"/>
+        </scene>
+        <!--Tutorial Page View Controller-->
+        <scene sceneID="LEV-dG-QRx">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="3Va-HZ-OnQ" customClass="TutorialPageViewController" customModule="Weerstation" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F1u-Ox-OR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3735" y="1095"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="1pv-4f-Idb">
+            <objects>
+                <viewController id="luh-B1-q9J" customClass="TutorialViewController" customModule="Weerstation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u91-tv-lly">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mdg-7y-NPS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="3Va-HZ-OnQ" kind="embed" id="0Y7-eB-8NZ"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="I3C-YN-eqw">
+                                <rect key="frame" x="136" y="634" width="103" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <color key="pageIndicatorTintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemOrangeColor"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wnF-7E-fIB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mdg-7y-NPS" firstAttribute="top" secondItem="wnF-7E-fIB" secondAttribute="top" id="2PZ-IU-825"/>
+                            <constraint firstItem="I3C-YN-eqw" firstAttribute="bottom" secondItem="wnF-7E-fIB" secondAttribute="bottom" constant="-5" id="Tbc-fC-fcz"/>
+                            <constraint firstItem="wnF-7E-fIB" firstAttribute="trailing" secondItem="mdg-7y-NPS" secondAttribute="trailing" id="Twb-NQ-cCd"/>
+                            <constraint firstItem="wnF-7E-fIB" firstAttribute="bottom" secondItem="mdg-7y-NPS" secondAttribute="bottom" id="XMr-1f-Dc4"/>
+                            <constraint firstItem="I3C-YN-eqw" firstAttribute="centerX" secondItem="mdg-7y-NPS" secondAttribute="centerX" id="ujk-Y2-cdP"/>
+                            <constraint firstItem="mdg-7y-NPS" firstAttribute="leading" secondItem="wnF-7E-fIB" secondAttribute="leading" id="xHn-au-lRD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="mdg-7y-NPS" id="fBS-Nm-ylI"/>
+                        <outlet property="pageControl" destination="I3C-YN-eqw" id="NVS-bM-lj6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DPU-3S-N0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3735" y="260"/>
+        </scene>
+        <!--Chart View-->
+        <scene sceneID="N5t-3N-TWb">
+            <objects>
+                <viewController storyboardIdentifier="grafiekBuiten" id="P5m-yM-oMV" customClass="chartView" customModule="Weerstation" customModuleProvider="target" sceneMemberID="viewController">
+                    <stackView key="view" opaque="NO" contentMode="top" axis="vertical" distribution="fillEqually" id="Sv0-aq-6C2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7RL-fk-rtx" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="10" width="343" height="323.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oob-L6-BiF" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="333.5" width="343" height="323.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rSL-YW-d5S"/>
+                        <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                    </stackView>
+                    <connections>
+                        <outlet property="tempBinnenLinechart" destination="oob-L6-BiF" id="zx0-Zo-faY"/>
+                        <outlet property="tempBuitenLineChart" destination="7RL-fk-rtx" id="4ki-oS-Ydv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVp-In-JYi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5759.1999999999998" y="1095.2023988005999"/>
+        </scene>
+        <!--tempBinnen-->
+        <scene sceneID="hGE-jc-6ua">
+            <objects>
+                <viewController storyboardIdentifier="tempBinnen" id="Wth-7P-Trx" userLabel="tempBinnen" customClass="tempBinnen" customModule="Weerstation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="68v-Yd-XsO" userLabel="mainView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JF2-8I-eLW" userLabel="scrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="FqX-Z0-fTn" userLabel="stackView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="645"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="645" id="UcW-jp-s73"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FqX-Z0-fTn" firstAttribute="height" secondItem="JF2-8I-eLW" secondAttribute="height" priority="250" id="Ds8-5i-dgO"/>
+                                    <constraint firstAttribute="bottom" secondItem="FqX-Z0-fTn" secondAttribute="bottom" id="cr1-tD-d2R"/>
+                                    <constraint firstItem="FqX-Z0-fTn" firstAttribute="width" secondItem="JF2-8I-eLW" secondAttribute="width" id="dVc-A0-lIM"/>
+                                    <constraint firstItem="FqX-Z0-fTn" firstAttribute="leading" secondItem="JF2-8I-eLW" secondAttribute="leading" id="kcg-0e-eZ6"/>
+                                    <constraint firstAttribute="trailing" secondItem="FqX-Z0-fTn" secondAttribute="trailing" id="nEV-ze-uhy"/>
+                                    <constraint firstItem="FqX-Z0-fTn" firstAttribute="top" secondItem="JF2-8I-eLW" secondAttribute="top" id="yab-CF-FYd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HGH-4m-REq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JF2-8I-eLW" firstAttribute="trailing" secondItem="HGH-4m-REq" secondAttribute="trailing" id="Tt2-Gb-3ZG"/>
+                            <constraint firstItem="JF2-8I-eLW" firstAttribute="bottom" secondItem="HGH-4m-REq" secondAttribute="bottom" id="eMG-1Q-y9h"/>
+                            <constraint firstItem="JF2-8I-eLW" firstAttribute="leading" secondItem="HGH-4m-REq" secondAttribute="leading" id="emo-ru-UfG"/>
+                            <constraint firstItem="JF2-8I-eLW" firstAttribute="top" secondItem="HGH-4m-REq" secondAttribute="top" id="xuB-Un-sLs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="FqX-Z0-fTn" id="c8i-Ge-QQe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rJe-fG-keI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5090" y="1097"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemGrayColor"/>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "F0292323-02B9-480E-B7F5-F8DD50A3FF0B",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Weerstation.xcodeproj",
+        "identifier" : "23A6B26D255B271B00C3EA8A",
+        "name" : "WeerstationTests"
+      }
+    }
+  ],
+  "version" : 1
+}
