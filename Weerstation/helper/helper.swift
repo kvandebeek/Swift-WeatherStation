@@ -9,6 +9,6 @@ class helper
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss.SSSS"
         let dateString = df.string(from: date)
-        print(tekst + ":  " + dateString)
+        print(tekst + ": " + dateString)
     }
 }
