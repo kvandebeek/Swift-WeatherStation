@@ -24,20 +24,17 @@ Along the way, the following was added/changed:
 
 * Board type: Arduino Uno WiFi
 * Sensors: 
-**
-**
-**
-* Code can be found in the following repository:
+** SHT-31 (temperature / humidity)
+** MPL3115A2 (air pressure / temperature)
+** MCP9808 (temperature)
+* Code can be found in the following repository: https://github.com/kvandebeek/Arduino-weather
 
 ### Arduino with ultrasonic sensor to measure water level in a rainwater well
 
 * Board type: Arduino Uno Wifi
 * Sensors:
-** 
-** 
-** 
+** Grove Ultrasonic
 * Code can be found in the following repository: 
-* 
 
 ### Raspberry PI running Raspbian
 
