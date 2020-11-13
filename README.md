@@ -9,8 +9,8 @@ I started this project in 2017 as a combination of the following items:
 
 Along the way, the following was added/changed:
 * 2 indoor sensors, making use of Particle Photon boards
-* A website in JS -> this was converted to a PHP version
-* A very simple iOS app (I don't consider myself to be a developer)
+* A website in JS (created in 2017) -> this was converted to a PHP version (in 2019)
+* A very simple iOS app (with only a few views)
 
 ## Component overview / details
 
@@ -38,6 +38,7 @@ Along the way, the following was added/changed:
   * LCD display that shows the level (in centimeter) and the percentage relative to the maximum (which is 5000 liter)
   * LED bar with 10 LEDs ranging from 'red' to 'green' to show the level
 * Code can be found in the following repository: https://github.com/kvandebeek/Waterlevel
+* Based on the following project: https://www.automaton.be/blog/niveau-regenwater-meten/3077/
 
 ### Raspberry PI running Raspbian
 
@@ -46,18 +47,16 @@ Along the way, the following was added/changed:
 * MySQL server: Ver 15.1 Distrib 10.0.28-MariaDB
 * Other tasks: CRON jobs and SHELL scripts to generate weather data
 
-- an Arduino with temperature / air pressure / humidity sensors connected, housed in a Stevenson Screen (https://en.wikipedia.org/wiki/Stevenson_screen)
-- an Arduino with an ultrasonic sensor to measure the water level in a rainwater well, inspired by an article I read (https://www.automaton.be/blog/niveau-regenwater-meten/3077/)
-- a Raspberry PI running Raspbian (currently at 'Debian 10', Buster - https://en.wikipedia.org/wiki/Raspberry_Pi_OS)
-  - this acts as a web server (Apache) that hosts my website
-  - it is also a MySQL server (MariaDB) that hosts the data
-  - it runs CRON jobs and has scripts to generate data that are displayed on the website and in the iOS app
+### Indoor sensor for kitchen
+* Platform: Particle Photon (https://docs.particle.io/photon/)
+* Sensor:
+ * MPL3115A2 (Temperature / Barometer)
+* Code can be found in the following repository: https://github.com/kvandebeek/IndoorSensors
 
-Additions/changes in 2020:
-- 2 indoor sensors, making use of Particle Photon boards
-- Changed the initial website which was in JS with a PHP version
-- Created a simple iOS app
-  - Works on iPhone (iPad not supported)
-  - Shows data from the webserver
-  - Uses an external chart library to show historic data
-  - Is used to get more familiar with test automation
+### Indoor sensor for storage room
+* Platform: Particle Photon (https://docs.particle.io/photon/)
+* Sensor:
+ * MPL3115A2 (Temperature / Barometer)
+ * SHT31 (Temperature / Humidity)
+* Code can be found in the following repository: https://github.com/kvandebeek/IndoorSensors
+
