@@ -50,12 +50,12 @@ Along the way, the following was added/changed:
 ### Indoor sensor for kitchen
 * Platform: Particle Photon (https://docs.particle.io/photon/)
 * Sensor:
- * MPL3115A2 (Temperature / Barometer)
+  * MPL3115A2 (Temperature / Barometer)
 * Code can be found in the following repository: https://github.com/kvandebeek/IndoorSensors
 
 ### Indoor sensor for storage room
 * Platform: Particle Photon (https://docs.particle.io/photon/)
 * Sensor:
- * MPL3115A2 (Temperature / Barometer)
- * SHT31 (Temperature / Humidity)
+  * MPL3115A2 (Temperature / Barometer)
+  * SHT31 (Temperature / Humidity)
 * Code can be found in the following repository: https://github.com/kvandebeek/IndoorSensors
