@@ -59,4 +59,3 @@ Along the way, the following was added/changed:
  * MPL3115A2 (Temperature / Barometer)
  * SHT31 (Temperature / Humidity)
 * Code can be found in the following repository: https://github.com/kvandebeek/IndoorSensors
-
