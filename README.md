@@ -57,5 +57,5 @@ Along the way, the following was added/changed:
 * Platform: Particle Photon (https://docs.particle.io/photon/)
 * Sensor:
   * MPL3115A2 (Temperature / Barometer)
-  * SHT31 (Temperature / Humidity)
+  * SHT-31 (Temperature / Humidity)
 * Code can be found in the following repository: https://github.com/kvandebeek/IndoorSensors
