@@ -27,7 +27,7 @@ Along the way, the following was added/changed:
   * SHT-31 (temperature / humidity)
   * MPL3115A2 (air pressure / temperature)
   * MCP9808 (temperature)
-* Code can be found in the following repository: https://github.com/kvandebeek/Arduino-weather
+* Code can be found in the following repository: https://github.com/kvandebeek/ArduinoUno-WeatherStation
 
 ### Arduino-based water level meter with ultrasonic sensor
 
@@ -37,7 +37,7 @@ Along the way, the following was added/changed:
 * Other components:
   * LCD display that shows the level (in centimeter) and the percentage relative to the maximum (which is 5000 liter)
   * LED bar with 10 LEDs ranging from 'red' to 'green' to show the level
-* Code can be found in the following repository: https://github.com/kvandebeek/Waterlevel
+* Code can be found in the following repository: https://github.com/kvandebeek/ArduinoUno-Waterlevel
 * Based on the following project: https://www.automaton.be/blog/niveau-regenwater-meten/3077/
 
 ### Raspberry PI running Raspbian
@@ -51,11 +51,11 @@ Along the way, the following was added/changed:
 * Platform: Particle Photon (https://docs.particle.io/photon/)
 * Sensor:
   * MPL3115A2 (Temperature / Barometer)
-* Code can be found in the following repository: https://github.com/kvandebeek/IndoorSensors
+* Code can be found in the following repository: https://github.com/kvandebeek/ParticlePhoton-IndoorSensors
 
 ### Indoor sensor for storage room
 * Platform: Particle Photon (https://docs.particle.io/photon/)
 * Sensor:
   * MPL3115A2 (Temperature / Barometer)
   * SHT-31 (Temperature / Humidity)
-* Code can be found in the following repository: https://github.com/kvandebeek/IndoorSensors
+* Code can be found in the following repository: https://github.com/kvandebeek/ParticlePhoton-IndoorSensors
