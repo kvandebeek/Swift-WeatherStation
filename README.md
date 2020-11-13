@@ -20,28 +20,31 @@ Along the way, the following was added/changed:
 * Cabling from Arduino to breakout board: UTP (Cat 5) running through a 20 meter underground plastic tube
 * The Arduino itself is placed in a garden shed (where it connects to the internet via Wi-Fi)
 
-### Arduino with sensors to measure weather
+### Arduino-based weather station with sensors
 
 * Board type: Arduino Uno WiFi
 * Sensors: 
-** SHT-31 (temperature / humidity)
-** MPL3115A2 (air pressure / temperature)
-** MCP9808 (temperature)
+  * SHT-31 (temperature / humidity)
+  * MPL3115A2 (air pressure / temperature)
+  * MCP9808 (temperature)
 * Code can be found in the following repository: https://github.com/kvandebeek/Arduino-weather
 
-### Arduino with ultrasonic sensor to measure water level in a rainwater well
+### Arduino-based water level meter with ultrasonic sensor
 
 * Board type: Arduino Uno Wifi
 * Sensors:
-** Grove Ultrasonic
-* Code can be found in the following repository: 
+  * Grove Ultrasonic (this is connected to the Arduino using a 15 meter cable going through an underground plastic tube)
+* Other components:
+  * LCD display that shows the level (in centimeter) and the percentage relative to the maximum (which is 5000 liter)
+  * LED bar with 10 LEDs ranging from 'red' to 'green' to show the level
+* Code can be found in the following repository: https://github.com/kvandebeek/Waterlevel
 
 ### Raspberry PI running Raspbian
 
-* Operating system: 
-* Web server: 
-* MySQL server: 
-* Other tasks:
+* Operating system: Raspberry PI OS (Debian 10 - Buster)
+* Web server: Apache 2
+* MySQL server: Ver 15.1 Distrib 10.0.28-MariaDB
+* Other tasks: CRON jobs and SHELL scripts to generate weather data
 
 - an Arduino with temperature / air pressure / humidity sensors connected, housed in a Stevenson Screen (https://en.wikipedia.org/wiki/Stevenson_screen)
 - an Arduino with an ultrasonic sensor to measure the water level in a rainwater well, inspired by an article I read (https://www.automaton.be/blog/niveau-regenwater-meten/3077/)
